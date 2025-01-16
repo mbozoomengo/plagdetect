@@ -67,7 +67,6 @@ if choice == "Accueil":
     st.markdown("---")
     st.subheader("📌 **Prêt à commencer ?**")
     st.write("Sélectionnez une option dans le menu à gauche pour démarrer votre analyse.")
-    st.button("Commencer maintenant", help="Cliquez pour explorer les fonctionnalités disponibles.")
 
 
 elif choice == "Vérifier les Similitudes":
