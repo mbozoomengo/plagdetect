@@ -43,8 +43,32 @@ choice = st.sidebar.selectbox("Menu", menu)
 if choice == "Accueil":
     # Ajouter le logo en haut de la page
     st.image("logo.png", width=150)  # Affichez le logo en haut de la page d'accueil
-    st.title("🏠 Bienvenue dans PlagDetect")
-    st.markdown("Sélectionnez une option dans le menu gauche pour commencer.")
+
+    # Titre principal
+    st.title("🏠 Bienvenue dans **PlagDetect**")
+    st.write("""
+    **PlagDetect** est une application puissante et intuitive conçue pour détecter et analyser les similarités entre plusieurs documents, facilitant ainsi la détection de plagiat.
+    """)
+
+    # Ajout d'une ligne de séparation
+    st.markdown("---")
+
+    # Section des fonctionnalités principales
+    st.header("✨ Fonctionnalités principales")
+    st.markdown("""
+    - **📄 Évaluez à quel point un document est "inspiré" d'un autre avec un pourcentage de similarité.**
+    - **📂 Analyse de plusieurs fichiers**
+    - **🖥️ Une interface conviviale pour le téléchargement et l'analyse des documents.**
+    - **📑 Support multi-formats (.docx, .pdf, .txt).**
+    - **🌍 Comparaison multilingue.**
+    """)
+
+    # Ajout d'une section Call-to-Action
+    st.markdown("---")
+    st.subheader("📌 **Prêt à commencer ?**")
+    st.write("Sélectionnez une option dans le menu à gauche pour démarrer votre analyse.")
+    st.button("Commencer maintenant", help="Cliquez pour explorer les fonctionnalités disponibles.")
+
 
 elif choice == "Vérifier les Similitudes":
     st.title(':mag: PlagDetect - Vérification des Similitudes')
@@ -118,20 +142,18 @@ elif choice == "Consulter les Documents":
 elif choice == "À propos":
     st.title("📝 À propos")
     st.write("""
-       **PlagDetect** est une application conçue pour détecter le plagiat entre différents documents en analysant leurs contenus et en identifiant les similarités.
-
-        ### Fonctionnalités principales :
-        - **Comparaison de deux ou plusieurs documents** : Évalue à quel point un document est "inspiré" d'un autre en donnant un pourcentage de similarité.
-        - **Analyse de plusieurs documents** : Regroupe les documents par niveaux de similarité détectée.
-        - **Interface utilisateur intuitive** : Une interface conviviale qui facilite le téléchargement et l'analyse de vos documents.
-        - **Support multi-formats** : Prends en charge divers formats de fichiers (.docx, .pdf, et .txt.)
-        - **Comparaison de documents dans différentes langues** : Capacité à comparer des documents rédigés dans différentes langues.
-
         ### Notre Équipe :
         **PlagDetect** est développé par une équipe d'Ingénieurs en Informatique et Systèmes d'Informations.
 
+        ### Membres de l'équipe :
+        - **MBOZO'O William**
+        - **TAKU Aurélien**
+        - **TOMBI Medhi**
+
         **Merci d'avoir choisi PlagDetect !**
     """)
+    st.write("© 2025 PlagDetect. Tous droits réservés.")
+
 
 if __name__ == "__main__":
     create_tables()
