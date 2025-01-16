@@ -23,6 +23,7 @@ def empty_database_button():
         if st.button("Vider la base de données"):
             if clear_database():
                 st.success("La base de données a été vidée avec succès.")
+                st.rerun()
             else:
                 st.error("Une erreur est survenue lors du vidage de la base de données.")
     else:
@@ -107,6 +108,7 @@ elif choice == "Consulter les Documents":
         if st.button("Supprimer le fichier"):
             delete_file(selected_id)
             st.success(f"Le fichier {selected_id} a été supprimé avec succès.")
+            st.rerun()
 
         empty_database_button()
 
