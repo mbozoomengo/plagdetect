@@ -56,7 +56,7 @@ if choice == "Accueil":
     # Section des fonctionnalités principales
     st.header("✨ Fonctionnalités principales")
     st.markdown("""
-    - **📄 Évaluez à quel point un document est "inspiré" d'un autre avec un pourcentage de similarité.**
+    - **📄 Évaluez à quel point un document est inspiré d'un autre avec un pourcentage de similarité.**
     - **📂 Analyse de plusieurs fichiers**
     - **🖥️ Une interface conviviale pour le téléchargement et l'analyse des documents.**
     - **📑 Support multi-formats (.docx, .pdf, .txt).**
