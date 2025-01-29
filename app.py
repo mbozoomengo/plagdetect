@@ -54,7 +54,7 @@ if choice == "Accueil":
     st.markdown("---")
 
     # Section des fonctionnalités principales
-    st.header("✨ Fonctionnalités principales")
+    st.header("✨ Fonctionnalités principales :")
     st.markdown("""
     - **📄 Évaluez à quel point un document est inspiré d'un autre avec un pourcentage de similarité.**
     - **📂 Analyse de plusieurs fichiers**
